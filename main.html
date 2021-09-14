@@ -82,10 +82,19 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+              <div class="clear-message__title">STAGE：１  中継でやるところですが、実際にはできないので文章で表します。</div>
+              <div class="clear-message__content">「よし、ろうそくって入力します。ろ、う、そ、くっと、、、、<br>
+                ｶﾁｬ（ドアを開く音）あ！開きました！はっ、人が見えた！ﾊﾟﾀﾝ（ドアを閉める音）。。。。。<br>
+                ちょっと良いことを思いついたんですけど、、今、突き当たりに防犯カメラ室が見えました。<br>
+                このままだと私が動いていることがすぐバレるし、誘拐犯とばったり出くわしたりして捕まってしまうことがあるかもしれません。<br>
+                だから、防犯カメラを管理しているパソコンをハッキングして、犯人からは防犯カメラからの映像を見えなくすると同時に、警察さんは映像を見られるようにしたら、人々の目をすり抜けて脱出できるかもしれません、、！<br>
+                今部屋から人が出てきて、中に人はいない様子です。<br>
+                今がチャンスです！私にやらせてください！」<br>
+                君はOKを出し、（出さない場合もある）防犯カメラ室に入った。<br>
+                <br>
+                N子ちゃんは現状報告する。「部屋の中は、壁に大きなディスプレイがあります。真っ暗だな、、あ、、ロックされてる！パソコンを開くときのロックがかかってます！、、<br>
+                、、どうしよう、、え、なんか変なメモみたいなものがありました！<br>
+                これがロック解除のパスワードなのかな、、とりあえずこれの写真を送ります。、、今警察さんのメールに送りました！確認してください！</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
