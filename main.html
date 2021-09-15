@@ -33,8 +33,13 @@
         <!-- STAGE1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">メール</span>警察さんへ</h2>
-            <p class="text-center">扉にこのようなものが貼っていました。</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">プロローグ</span>ゲームを始める前に</h2>
+            <p class="text-center">スタートボタンを押したら、被害者から110番通報がここにかかってきて、対応する、という流れになるのですが、中継型はできないので、ストーリーを文章で読み、そこで謎が出てくるので、謎を解いて入力欄に入力する形でゲームを進めていきます。<br>
+              分からない場合は、ヒントもあります。その場合実際には被害者の方がしれっとヒントになるようなことを言うのですが、ここではそれができないのでヒントが書いてあるのリンクを載せています。<br>
+              このページは違いますが、次のページから入力欄はメールを送信する場所という設定になります。<br>
+              入力欄に「始める」と書いて、送信を押すと、ストーリーが始まります。<br>
+              <br>
+              それでは、恐怖！誘拐家族からの脱出ゲームに行ってらっしゃい！！！</p>
   
             <div class="container">
               <figure class="image__container">
@@ -73,7 +78,7 @@ Youtube貼り付けここまで -->
         </section>
         <!-- STAGE1解答入力セクション　ここまで -->
 
-        <!-- STAGE1クリア画面　ここから -->
+        <!-- プロローグ-->
         <!------------------------------------------------------------------------------------------------------
           ステージを全問正解するとclear['stage1']がtrusになります。
           v-if="clear['stage1']"はclear['stage1']がtrueになったら表示します。
@@ -181,29 +186,23 @@ Youtube貼り付けここまで -->
           </div>
         </section>
 
-        <!-- STAGE2クリア画面　ここから -->
+        <!-- 部屋の鍵を開けて、防犯カメラ室に向かうまでのストーリー　ここから -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">中継でやるところですが、実際にはできないので文章で表します。</div>
-              <div class="clear-message__content">「よっし、、これでどうだっ！、、、ロック解除できた！できましたロック解除！<br>
-                あとはハッキングするだけ、、まだ帰ってくる気配はありません、、でも早くしないと！！」<br>
-                ---3分後---<br>
-                「よしできた！これで警察さんにも見えるようになってるはず！こっちからは真っ黒で何も見えないようにしときました！<br>
-                怪しいって気づかれるのは時間の問題だけど、、<br>
-                とりあえずこれで脱出への道筋が見えてきた！<br>
-                警察さん、私を出口まで導いてください！」<br>
+              <div class="clear-message__content">「よし、ろうそくって入力します。ろ、う、そ、くっと、、、、<br>
+                ｶﾁｬ（ドアを開く音）あ！開きました！はっ、人が見えた！ﾊﾟﾀﾝ（ドアを閉める音）。。。。。<br>
+                ちょっと良いことを思いついたんですけど、、今、突き当たりに防犯カメラ室が見えました。<br>
+                このままだと私が動いていることがすぐバレるし、誘拐犯とばったり出くわしたりして捕まってしまうことがあるかもしれません。<br>
+                だから、防犯カメラを管理しているパソコンをハッキングして、犯人からは防犯カメラからの映像を見えなくすると同時に、警察さんは映像を見られるようにしたら、人々の目をすり抜けて脱出できるかもしれません、、！<br>
+                今部屋から人が出てきて、中に人はいない様子です。<br>
+                今がチャンスです！私にやらせてください！」<br>
+                君はOKを出し、（出さない場合もある）防犯カメラ室に入った。<br>
                 <br>
-                君は防犯カメラの映像をよく見た。すると、他にも誘拐されている人が見える！一人一人部屋に閉じ込められている！<br>
-                君はN子ちゃんにそれを伝える。するとN子ちゃんはこう言った。<br>
-                「助けましょう。警察さんからはこっちの様子が全部把握できてるわけだし、誘拐犯に見つからずにみんなを助け出すこともできるはずです！」<br>
-                君はさらに、鍵らしきものがたくさんある部屋があることに気づいた。この中にそれぞれの部屋の鍵があるかもしれない。<br>
-                鍵の部屋は誰もいなさそうだ。君はN子ちゃんをそこに誘導することに決めた。（違う判断をする場合もある）<br>
-                「わかりました。鍵の部屋、行きます。」<br>
-                「ｶﾁｬ（ドアを開ける音）、、ほんとだ、、すっごくたくさんある、、どれが部屋を開けられる鍵なのかな、、、<br>
-                うーーーーーーーん、、よく分からないな、、、」<br>
-                息詰まったN子ちゃん。そんなとき、君はそれぞれ部屋のドアの外側に、ひらがなが書かれていることに気づいた。<br>
-                君はこのひらがなはなんだろう、と思いながら、よーーーく防犯カメラの映像を見る。。。</div>
+                N子ちゃんは現状報告する。「部屋の中は、壁に大きなディスプレイがあります。真っ暗だな、、あ、、ロックされてる！パソコンを開くときのロックがかかってます！、、<br>
+                、、どうしよう、、え、なんか変なメモみたいなものがありました！<br>
+                これがロック解除のパスワードなのかな、、とりあえずこれの写真を送ります。、、今警察さんのメールに送りました！確認してください！</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -218,13 +217,8 @@ Youtube貼り付けここまで -->
         <!-- STAGE3-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">メール</span>N子ちゃんへ</h2>
-            <p class="text-center">ひらがなは何を表しているのでしょうか？<br>
-              〇に当てはまる言葉を考え、ひらがなが何を表しているかをN子ちゃんに伝えましょう。<br>
-              ※〇〇〇とその後の文章もメールで打って送信しましょう。<br>
-              ※実際は声に出してN子ちゃんに伝えますが、ここではできないので、文字で打つことになっています。<br>
-              <br>
-              〇〇〇と鍵の位置が関係している！<br>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">メール</span>警察さんへ</h2>
+            <p class="text-center">そのメモはこれです。</p>
             <figure class="image__container">
               <img src="assets/images/stage.png" alt="">
             </figure>
@@ -247,7 +241,7 @@ Youtube貼り付けここまで -->
         </section>
         <!-- STAGE3-1解答入力セクション　ここまで -->
 
-        <!-- STAGE3クリア画面　ここから -->
+        <!-- 防犯カメラ室のロック解除ができて鍵の部屋に向かうまでのストーリー　ここから -->
         <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
@@ -284,8 +278,13 @@ Youtube貼り付けここまで -->
         <!-- STAGE4-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">メール</span>警察さんへ</h2>
-            <p class="text-center">このメモだけ発見しました</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">メール</span>N子ちゃんへ</h2>
+            <p class="text-center">ひらがなは何を表しているのでしょうか？<br>
+              〇に当てはまる言葉を考え、ひらがなが何を表しているかをN子ちゃんに伝えましょう。<br>
+              ※〇〇〇とその後の文章もメールで打って送信しましょう。<br>
+              ※実際は声に出してN子ちゃんに伝えますが、ここではできないので、文字で打つことになっています。<br>
+              <br>
+              〇〇〇と鍵の位置が関係している！</p>              
             <figure class="image__container">
               <img src="assets/images/stage.png" alt="">
             </figure>
@@ -308,7 +307,7 @@ Youtube貼り付けここまで -->
         </section>
         <!-- STAGE4-1解答入力セクション　ここまで -->
         
-        <!-- STAGE3クリア画面　ここから -->
+        <!-- 部屋を開けられる鍵が分かって、部屋を次々と開けにいき、助けるが、誘拐家族に捕まりそう！というストーリー　ここから -->
         <section v-if="clear['stage4']" v-bind:class="{isClear:clear['stage4']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
