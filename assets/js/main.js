@@ -18,19 +18,31 @@ const app = Vue.createApp({
       */
       correctAnswer: {
         stage1: {
-          q1: 'あああ',
+          q1: 'ゲームを始める',
         },
         stage2: {
-          q1: 'いいい',
+          q1: 'ろうそく',
           // q2: 'えええ',
           // q3: 'おおお'
         },
         stage3: {
-          q1: 'ううう',
+          q1: '謎無し',
           // q2: 'かかか',
           // q3: 'ききき',
         }
       },
+        stage4: {
+          q1: '謎無し',
+          // q2: 'かかか',
+          // q3: 'ききき',
+        }
+      }, 
+        stage5: {
+          q1: 'KAZOKU',
+          // q2: 'かかか',
+          // q3: 'ききき',
+        }
+      },      
 
       /* それぞれの問題が正解かどうか
       *  ex. 問題2-3を追加する場合は配列にfalseを追加します。
@@ -50,12 +62,20 @@ const app = Vue.createApp({
           // false, // 3-3
         ]
       },
+        stage4: [
+          false, // 3-1
+          // false, // 3-2
+          // false, // 3-3
+        ]
+      },
 
       /* ステージの問題が全て正解かどうか */
       clear: {
         stage1: false,
         stage2: false,
         stage3: false,
+        stage4: false,
+        stage5: false,
       },
 
       /* 次のステージを表示するかどうか
@@ -64,6 +84,8 @@ const app = Vue.createApp({
       next: {
         stage1: false,
         stage2: false,
+        stage3: false,
+        stage4: false,
       },
     }
   },
