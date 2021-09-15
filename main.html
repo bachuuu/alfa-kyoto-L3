@@ -87,19 +87,28 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">中継でやるところですが、実際にはできないので文章で表します。</div>
-              <div class="clear-message__content">「よし、ろうそくって入力します。ろ、う、そ、くっと、、、、<br>
-                ｶﾁｬ（ドアを開く音）あ！開きました！はっ、人が見えた！ﾊﾟﾀﾝ（ドアを閉める音）。。。。。<br>
-                ちょっと良いことを思いついたんですけど、、今、突き当たりに防犯カメラ室が見えました。<br>
-                このままだと私が動いていることがすぐバレるし、誘拐犯とばったり出くわしたりして捕まってしまうことがあるかもしれません。<br>
-                だから、防犯カメラを管理しているパソコンをハッキングして、犯人からは防犯カメラからの映像を見えなくすると同時に、警察さんは映像を見られるようにしたら、人々の目をすり抜けて脱出できるかもしれません、、！<br>
-                今部屋から人が出てきて、中に人はいない様子です。<br>
-                今がチャンスです！私にやらせてください！」<br>
-                君はOKを出し、（出さない場合もある）防犯カメラ室に入った。<br>
-                <br>
-                N子ちゃんは現状報告する。「部屋の中は、壁に大きなディスプレイがあります。真っ暗だな、、あ、、ロックされてる！パソコンを開くときのロックがかかってます！、、<br>
-                、、どうしよう、、え、なんか変なメモみたいなものがありました！<br>
-                これがロック解除のパスワードなのかな、、とりあえずこれの写真を送ります。、、今警察さんのメールに送りました！確認してください！</div>
+              <div class="clear-message__title">ストーリー</div>
+              <div class="clear-message__content">プルルルルルル、プルルルルルル<br>
+                警察署に110番通報がかかってきた。<br>
+                君は通報を受け取る<br>
+                「こちらNS中央警察署です。何がありましたか。」<br>
+                通話の向こうからは一人の少女の声が聞こえる。<br>
+                「助けてください、、、高校1年生のS田N子です。。。今日学校から帰ってる途中に、なんか4人くらいの集団に襲われて、そっからは覚えてなくて、、気づいたらこんな部屋に閉じ込められてて。。。ドアも開かなくて。。。」<br>
+                君は思った。<br>
+                「最近多発している誘拐事件かもしれない、、この前の誘拐事件では犯人を直接捕まえようとして被害者が人質にさらされ亡くなってしまった、、、<br>
+                また直接捕まえに行ったらこの子も亡くなってしまうかもしれない、、、！<br>
+                今度は被害者自身に脱出してもらうしかない、、、！」<br>
+                そう思った君は、まず被害者がいる状況を聞き出すことにした。被害者の名前はN子と言うらしい。<br>
+                君「今はどんな部屋にいますか？周りに何かありますか？」<br>
+                N子「なんかドアに紙が貼られています、、」<br>
+                君「何か書かれていますか？」<br>
+                N子「6の中に嘘っていう文字があって、、あの、、今警察さんに写真を送りました」<br>
+                君「あ、、メールがきました、、何でメールアドレスを知らないのに送れたのですか？」<br>
+                N子「IT系には強いんです。警察さんのメールなんてすぐ分かります。」<br>
+                君「、、、、そうですか。。。。ほんとだ、メールが送られてきてる、、これはなんだ、、？？」<br>
+                N子「あと、隣にひらがなを入力するボタンがあります、、」<br>
+                君「謎解きみたいですね、、もしかしたら、そこにこの謎の答えを入力するのかもしれません。私も考えてみます。」<br>
+                メールが送られてきている。次に進を押して、メールを確認しよう。</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -119,7 +128,8 @@ Youtube貼り付けここまで -->
           <div class="section">
             <div class="container">
               <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">メール</span>警察さんへ</h2>
-              <p class="text-center">そのメモはこれです。</p>
+              <p class="text-center">この紙です。<br>
+                ※答えが分かったら送信を押して答えを伝えてください。<br>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -190,10 +200,11 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">中継でやるところですが、実際にはできないので文章で表します。</div>
-              <div class="clear-message__content">「よし、ろうそくって入力します。ろ、う、そ、くっと、、、、<br>
+              <div class="clear-message__title">ストーリー</div>
+              <div class="clear-message__content">「あ、、なるほど！！これを入力したらドアが開くかもしれない、、、<br>
+                よし、ろうそくって入力します。ろ、う、そ、くっと、、、、<br>
                 ｶﾁｬ（ドアを開く音）あ！開きました！はっ、人が見えた！ﾊﾟﾀﾝ（ドアを閉める音）。。。。。<br>
-                ちょっと良いことを思いついたんですけど、、今、突き当たりに防犯カメラ室が見えました。<br>
+                。。。。。警察さん、ちょっと良いことを思いついたんですけど、、今、突き当たりに防犯カメラ室が見えました。<br>
                 このままだと私が動いていることがすぐバレるし、誘拐犯とばったり出くわしたりして捕まってしまうことがあるかもしれません。<br>
                 だから、防犯カメラを管理しているパソコンをハッキングして、犯人からは防犯カメラからの映像を見えなくすると同時に、警察さんは映像を見られるようにしたら、人々の目をすり抜けて脱出できるかもしれません、、！<br>
                 今部屋から人が出てきて、中に人はいない様子です。<br>
@@ -245,7 +256,7 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">中継でやるところですが、実際にはできないので文章で表します。</div>
+              <div class="clear-message__title">ストーリー</div>
               <div class="clear-message__content">「よっし、、これでどうだっ！、、、ロック解除できた！できましたロック解除！<br>
                 あとはハッキングするだけ、、まだ帰ってくる気配はありません、、でも早くしないと！！」<br>
                 ---3分後---<br>
@@ -311,7 +322,7 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage4']" v-bind:class="{isClear:clear['stage4']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">中継でやるところですが、実際にはできないので文章で表します。</div>
+              <div class="clear-message__title">ストーリー</div>
               <div class="clear-message__content">「よっし、、これでどうだっ！、、、ロック解除できた！できましたロック解除！<br>
                 あとはハッキングするだけ、、まだ帰ってくる気配はありません、、でも早くしないと！！」<br>
                 ---3分後---<br>
