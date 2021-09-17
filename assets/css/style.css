@@ -485,6 +485,10 @@ button {
   font-size: 15px;
 }
 
+.clear-message__content4{
+  font-size: 13px;
+}
+
 .clear-message__btn {
   position: absolute;
   bottom: -30px;
