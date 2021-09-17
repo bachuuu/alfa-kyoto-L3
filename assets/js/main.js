@@ -60,9 +60,14 @@ const app = Vue.createApp({
           // false, // 3-3
         ],
         stage4: [
-          false, // 3-1
-          // false, // 3-2
-          // false, // 3-3
+          false, // 4-1
+          // false, // 4-2
+          // false, // 4-3
+        ],
+        stage5: [
+          false, // 5-1
+          // false, // 5-2
+          // false, // 5-3
         ]
       },
 
