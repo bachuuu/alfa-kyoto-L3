@@ -248,7 +248,7 @@ button {
 }
 
 .bg-color--gray {
-  background-color: #1b46a7;
+  background-color: #000;
 }
 
 /*********************
@@ -265,7 +265,7 @@ button {
 }
 
 .sub-title__bg {
-  background-color: #fcee21;
+  background-color: #1b46a7;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -275,7 +275,7 @@ button {
   line-height: 1.75;
   text-align: center;
   padding: 9px 20px;
-  background-color: #d9e021;
+  background-color: #1b46a7;
   margin: 0 -20px 20px -20px;
 }
 
@@ -337,7 +337,7 @@ button {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  background-color: #ffff00;
+  background-color: #1b46a7;
   color: #fff;
   font-size: 24px;
   line-height: 1.54167;
