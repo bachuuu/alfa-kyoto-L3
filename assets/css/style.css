@@ -482,11 +482,7 @@ button {
 
 .clear-message__content {
   text-align: left;
-  font-size: 15px;
-}
-
-.clear-message__content clear-message__content4{
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .clear-message__btn {
